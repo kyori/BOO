@@ -23,39 +23,47 @@ Ext.define('BOO.view.Pmix', {
 		                    xtype: 'image',
 		                    height: 167,
 		                    margin: '0 15 0 0',
+		                //    bottom: '10%',
 		                    ui: '',
 		                    width: 167,
 		                    id:'img1st',
 		                  
 		                    style: 'background-image: url("resources/images/frame_select_photo.png"); background-size: 100% 100%;'
 		                },
-		                
+		                {
+		                	xtype: 'image',
+		                	width: 33, height: 33,
+		               
+		                	style: 'background-image: url("resources/images/img_plus.png"); background-size: 100% 100%; background-repeat: no-repeat;'
+		                },
 		                {		    	        	      
 	    	                   xtype: 'image',
-	    	                   margin:'0 0 0 47',
+	    	                   margin:'0 0 0 27',
 	    	                   width: 167,
 	    	                   height: 167,
 	    	                   id: 'img2nd',
-	    	                   style: 'background-image: url("resources/images/frame_select_photo.png"); background-size: 100% 100%;'
+	    	                   style: 'background-image: url("resources/images/frame_select_hair.png"); background-size: 100% 100%;'
 	    	              }
 		                ]
 		        			
 		        			
 		        	},{
 		        		xtype: 'panel',
-		        		layout: 'hbox',
-		        		bottom: '24%',
-		        		align: 'center',
+		        		layout: {
+		        			type: 'hbox',
+		        			align: 'center',
+		        			pack: 'center'
+		        		},
+		        		bottom: '16%',
 		        		//left: '28%',
 		        		
 		        		items: [{
 				            xtype: 'button',
-				            hidden: true,
-				            width: 234,
-				            height: 185,
+				            width: 222,
+				            height: 174,
 				            id: 'pmixbutton',
 				    		styleHtmlContent: true,
-				    		style: 'background-image: url("resources/images/btn_mix01.jpg"); background-size: 100% 100%; background-repeat: no-repeat;',
+				    		style: 'background-image: url("resources/images/btn_mix01_gray.png"); background-size: 100% 100%; background-repeat: no-repeat;',
 //				    		top: 230,
 //				    		left: 1
 		        		}]
