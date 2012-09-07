@@ -26,17 +26,18 @@ Ext.define('BOO.view.Pmix', {
 		                    ui: '',
 		                    width: 167,
 		                    id:'img1st',
-		                    style: 'background-size: 100% 100%;'
+		                  
+		                    style: 'background-image: url("resources/images/frame_select_photo.png"); background-size: 100% 100%;'
 		                },
 		                
-//		                {		    	        	      
-//	    	                   xtype: 'image',
-//	    	                   margin:'0 0 0 47',
-//	    	                   width: 167,
-//	    	                   height: 167,
-//	    	                   id: 'img2nd',
-//	    	                   style: 'background-size: 100% 100%;'
-//	    	              }
+		                {		    	        	      
+	    	                   xtype: 'image',
+	    	                   margin:'0 0 0 47',
+	    	                   width: 167,
+	    	                   height: 167,
+	    	                   id: 'img2nd',
+	    	                   style: 'background-image: url("resources/images/frame_select_photo.png"); background-size: 100% 100%;'
+	    	              }
 		                ]
 		        			
 		        			
@@ -54,7 +55,7 @@ Ext.define('BOO.view.Pmix', {
 				            height: 185,
 				            id: 'pmixbutton',
 				    		styleHtmlContent: true,
-				    		style: 'background-image: url("resources/images/sub_1_button3.jpg"); background-size: 100% 100%; background-repeat: no-repeat;',
+				    		style: 'background-image: url("resources/images/btn_mix01.jpg"); background-size: 100% 100%; background-repeat: no-repeat;',
 //				    		top: 230,
 //				    		left: 1
 		        		}]
@@ -66,6 +67,7 @@ Ext.define('BOO.view.Pmix', {
 		        			align : 'center',
 		        			pack : 'center'
 		        		},
+		        		margin: 0,
 		        		bottom: '0%',
 		        		//left: '30%', 
 		        		width: '100%',
@@ -74,22 +76,22 @@ Ext.define('BOO.view.Pmix', {
 		        		items: [{
 		                    xtype: 'button',
 		                   margin: '0 10 0 0',
-		                    width: 91,
-		                    height: 50,
+		                    width: 100,
+		                    height: 49,
 		                    iconMask: true,
 		                    id:'mixtake',
 		            		styleHtmlContent: true,
-		            		style: 'background-image: url("resources/images/button1.jpg"); background-size: 100% 100%;  background-repeat: no-repeat;',
-
+		            		style: 'background-image: url("resources/images/tab_btn01copy.png"); background-size: 100% 100%;  background-repeat: no-repeat;',
+		            		
 		        		},{
 		                    xtype: 'button',
 		                   margin: '0 0 0 10',
-		                    width: 80,
-		                    height: 55,
+		                    width: 100,
+		                    height: 52,
 		                    id:'mixgallery',
 		            		styleHtmlContent: true,
-		            		style: 'background-image: url("resources/images/button2.jpg"); background-size: 100% 100%;  background-repeat: no-repeat;',
-
+		            		style: 'background-image: url("resources/images/tab_btn02copy.png"); background-size: 100% 100%;  background-repeat: no-repeat;',
+		            		
 		        		}]
 		        	}
 		        ]

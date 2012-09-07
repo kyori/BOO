@@ -18,7 +18,7 @@ Ext.define("BOO.view.Main", {
                 {
                     xtype: 'titlebar',
                     docked: 'top',
-                    height: 50,
+                   // height: 100,
                     ui : 'neutral',
                     title: 'Photo Revolution',
                     style: 'background: url("./resources/images/actionbar.png"); background-size: 100% 100%;', 
@@ -31,17 +31,25 @@ Ext.define("BOO.view.Main", {
                             hidden: true,
                             id: 'Back',
                             itemId: 'mybutton',
-                            iconCls: 'home',
+                            width: '100%',
+                            height: '100%',
+                      //      iconCls: 'home',
                             iconMask: true,
-                            text: ''
+                            style: 'background: url("./resources/images/btn_home.png"); background-size: 100% 100%; background-repeat: no-repeat;', 
+                            text: '',
+                            margin: '0 5'
                         },
                         {
                             xtype: 'button',
-                            iconCls: 'info',
+                       //     iconCls: 'info',
                             id: 'Info',
                             iconMask: true,
                             text: '',
-                            align: 'right'
+                            width: '100%',
+                            height: '100%',
+                            style: 'background: url("./resources/images/btn_info.png"); background-size: 100% 100%; background-repeat: no-repeat;',
+                            align: 'right',
+                            margin: '0 10 0 0'
                         },
 
                     ]
@@ -72,7 +80,7 @@ Ext.define("BOO.view.Main", {
                             align: 'center',
                             style: 'align:center; background-size: 100% 100%; background-image:url("resources/images/btn_mix.png");',
                             styleHtmlContent: true,
-                            bottom: '23%',
+                            bottom: '18%',
                             left: '14%',
                         },
                         {
@@ -85,7 +93,7 @@ Ext.define("BOO.view.Main", {
                      //       left: 72,
                             style: 'align:center; background-size: 100% 100%; background-image:url("resources/images/btn_distortion.png");',
                             styleHtmlContent: true,
-                            bottom: '9%',
+                            bottom: '4%',
                             left: '14%'
                             
                         },
